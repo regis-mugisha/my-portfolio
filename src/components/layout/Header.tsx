@@ -1,9 +1,10 @@
 import { Moon } from "lucide-react";
 import { links } from "@/constants/links";
+import { AnimatedThemeToggler } from "../magicui/animated-theme-toggler";
 
 const Header = () => {
   return (
-    <div className="w-full flex items-center justify-around py-2">
+    <div className="sticky top-0 z-50 w-full backdrop-blur-sm flex items-center justify-between py-2 px-35">
       <img
         className="w-8 h-8 rounded-full object-cover"
         src="/src/assets/images/profile-pic.jpg"
@@ -12,7 +13,7 @@ const Header = () => {
 
       {/* Navigation bar */}
       <div>
-        <nav className="flex items-center gap-7 border p-3 rounded-full shadow-md">
+        <nav className="flex items-center gap-7 border py-3 px-4 rounded-full shadow-md">
           {links.map((link) => (
             <a
               href={`#${link.toLowerCase()}`}
@@ -26,7 +27,7 @@ const Header = () => {
       </div>
 
       <div>
-        <Moon size={18} className="cursor-pointer" />
+        <AnimatedThemeToggler />
       </div>
     </div>
   );
