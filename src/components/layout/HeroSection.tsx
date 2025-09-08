@@ -7,7 +7,10 @@ import { ChevronRight } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <div className="relative grid h-screen w-full place-items-center overflow-hidden">
+    <section
+      id="home"
+      className="relative grid h-screen w-full place-items-center overflow-hidden"
+    >
       {/* Main Content */}
       <div className="relative z-10 flex w-full max-w-7xl items-center justify-between px-35">
         <div className="flex flex-col items-start gap-4">
@@ -49,7 +52,7 @@ const HeroSection = () => {
       <div className="absolute right-0 top-0 h-full w-1/2 z-0">
         <Ripple />
       </div>
-    </div>
+    </section>
   );
 };
 
