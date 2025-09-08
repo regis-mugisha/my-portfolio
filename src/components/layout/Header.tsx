@@ -4,7 +4,7 @@ import { AnimatedThemeToggler } from "../magicui/animated-theme-toggler";
 
 const Header = () => {
   return (
-    <div className="sticky top-0 z-50 w-full backdrop-blur-sm flex items-center justify-between py-2 px-35">
+    <header className="sticky top-0 z-50 w-full backdrop-blur-sm flex items-center justify-between py-2 px-35">
       <img
         className="w-8 h-8 rounded-full object-cover"
         src="/src/assets/images/profile-pic.jpg"
@@ -29,7 +29,7 @@ const Header = () => {
       <div>
         <AnimatedThemeToggler />
       </div>
-    </div>
+    </header>
   );
 };
 
