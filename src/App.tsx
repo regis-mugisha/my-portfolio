@@ -1,6 +1,7 @@
 import AboutMe from "./components/layout/AboutMe";
 import Header from "./components/layout/Header";
 import HeroSection from "./components/layout/HeroSection";
+import TechStack from "./components/layout/TechStack";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <HeroSection />
       <AboutMe />
+      <TechStack />
     </div>
   );
 }
