@@ -1,6 +1,7 @@
 import AboutMe from "./components/layout/AboutMe";
 import Header from "./components/layout/Header";
 import HeroSection from "./components/layout/HeroSection";
+import Projects from "./components/layout/Projects";
 import TechStack from "./components/layout/TechStack";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <HeroSection />
       <AboutMe />
       <TechStack />
+      <Projects />
     </div>
   );
 }
