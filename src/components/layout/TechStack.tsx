@@ -1,4 +1,3 @@
-import React from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TechIcon } from "@/components/common/TechIcon";
 import {
@@ -6,22 +5,24 @@ import {
   backendTech,
   mobileTech,
   othersTech,
+  technologyCategories,
 } from "@/constants/technologies";
 
 const TechStack = () => {
   return (
     <section
       id="tech-stack"
-      className="min-h-[70vh] flex flex-col items-center pt-12"
+      className="h-screen flex flex-col items-center justify-center"
     >
       <h2 className="font-semibold text-4xl mb-12">Tech Stack</h2>
 
       <Tabs defaultValue="frontend" className="w-full max-w-2xl">
         <TabsList className="mx-auto flex">
-          <TabsTrigger value="frontend">Frontend</TabsTrigger>
-          <TabsTrigger value="backend">Backend</TabsTrigger>
-          <TabsTrigger value="mobile">Mobile</TabsTrigger>
-          <TabsTrigger value="others">Others</TabsTrigger>
+          {technologyCategories.map((category) => (
+            <TabsTrigger value={`${category.toLowerCase()}`}>
+              {category}
+            </TabsTrigger>
+          ))}
         </TabsList>
 
         {/* --- Frontend Content --- */}

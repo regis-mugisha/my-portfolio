@@ -5,17 +5,17 @@ import { Card, CardContent, CardFooter } from "../ui/card";
 
 const AboutMe = () => {
   return (
-    <section id="about" className="px-35 h-screen pt-12">
+    <section id="about" className="px-35 h-screen flex flex-col justify-center">
       <h2 className="text-center font-semibold text-4xl mb-12">About Me</h2>
 
       <div className="flex items-center justify-between gap-4">
         {/* Card */}
         <div className="w-[40%]">
-          <Card className="w-70 transform -rotate-3">
+          <Card className="w-70 transform -rotate-3 transition duration-300 hover:-translate-y-3">
             <CardContent>
               <img
                 src="/src/assets/images/profile-pic.jpg"
-                className="w-full h-80 object-cover rounded-2xl"
+                className="w-full h-80 object-cover rounded-2xl grayscale hover:grayscale-0 transition-filter duration-300 ease-in-out"
                 alt="image"
               />
             </CardContent>
