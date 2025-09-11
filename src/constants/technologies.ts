@@ -1,5 +1,7 @@
 import type { Technology } from "@/types";
 
+export const technologyCategories = ["Frontend", "Backend", "Mobile", "Others"];
+
 // --- Frontend Technologies ---
 export const frontendTech: Technology[] = [
   {
