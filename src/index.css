@@ -4,7 +4,6 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --text-sm: 12px;
   --text-md: 14px;
 }
 
