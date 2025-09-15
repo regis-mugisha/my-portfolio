@@ -5,13 +5,13 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="min-h-screen w-full flex flex-col items-center pt-20"
+      className="min-h-screen w-full flex flex-col items-center pt-20 mb-6"
     >
       <h2 className="font-semibold text-4xl mb-12">Projects</h2>
       <Tabs defaultValue="all" className="items-center w-full">
         <TabsList>
           {projectCategories.map((category) => (
-            <TabsTrigger value={`${category.toLowerCase()}`}>
+            <TabsTrigger key={category} value={`${category.toLowerCase()}`}>
               {category}
             </TabsTrigger>
           ))}
