@@ -1,8 +1,8 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TechIcon } from "@/components/common/TechIcon";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
-  frontendTech,
   backendTech,
+  frontendTech,
   mobileTech,
   othersTech,
   technologyCategories,
