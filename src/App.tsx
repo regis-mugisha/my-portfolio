@@ -1,4 +1,7 @@
 import AboutMe from "./components/layout/AboutMe";
+import ContactMe from "./components/layout/ContactMe";
+import Education from "./components/layout/Education";
+import Footer from "./components/layout/Footer";
 import Header from "./components/layout/Header";
 import HeroSection from "./components/layout/HeroSection";
 import Projects from "./components/layout/Projects";
@@ -12,6 +15,9 @@ function App() {
       <AboutMe />
       <TechStack />
       <Projects />
+      <Education />
+      <ContactMe />
+      <Footer />
     </div>
   );
 }
