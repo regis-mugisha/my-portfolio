@@ -1,5 +1,6 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import { Github, SquareArrowOutUpRight } from "lucide-react";
+import { IconBrandGithub } from "@tabler/icons-react";
+import { SquareArrowOutUpRight } from "lucide-react";
 import IconButton from "./IconButton";
 import ImagePlaceholder from "./ImagePlaceholder";
 
@@ -32,7 +33,7 @@ const ProjectCard = ({
               )}
 
               <IconButton hrefLink={githubLink}>
-                <Github />
+                <IconBrandGithub />
               </IconButton>
             </div>
 
