@@ -18,8 +18,9 @@ const Projects = () => {
         </TabsList>
         <TabsContent value="all">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr max-w-7xl py-8 px-35">
-            {allProjects.map((project) => (
+            {allProjects.map((project, index) => (
               <ProjectCard
+                key={index}
                 image={project.image}
                 name={project.name}
                 technologyStack={project.technologyStack}

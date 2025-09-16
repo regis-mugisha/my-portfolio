@@ -18,8 +18,8 @@ const TechStack = () => {
 
       <Tabs defaultValue="frontend" className="w-full max-w-2xl">
         <TabsList className="mx-auto flex">
-          {technologyCategories.map((category) => (
-            <TabsTrigger value={`${category.toLowerCase()}`}>
+          {technologyCategories.map((category, index) => (
+            <TabsTrigger key={index} value={`${category.toLowerCase()}`}>
               {category}
             </TabsTrigger>
           ))}
