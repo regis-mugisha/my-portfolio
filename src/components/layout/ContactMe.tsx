@@ -8,21 +8,37 @@ const ContactMe = () => {
   const [fullName, setFullName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
-
-  // const resendApiKey = import.meta.env.VITE_RESEND_API_KEY;
-  // const resend = new Resend(resendApiKey);
+  const [result, setResult] = useState<string>("");
 
   const handleSubmit = async (e: React.FormEvent) => {
-    // e.preventDefault();
-    // const { data, err } = await resend.emails.send({
-    //   from: `${email}`,
-    //   to: ["mugisharegis72@gmail.com"],
-    //   subject: "Hello World",
-    // });
-    // if (err) {
-    //   return console.error(err);
-    // }
-    // console.log({ data });
+    // prevent reloading
+    e.preventDefault();
+
+    setResult("Sending...");
+
+    const formData = {
+      fullName,
+      email,
+      message,
+      access_key: "c1e62916-8c24-4909-8ec4-4ff039efe284",
+    };
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
   };
   return (
     <section
@@ -62,6 +78,7 @@ const ContactMe = () => {
               />
               <Button type="submit">Say Hello👏</Button>
             </form>
+            <span className="mt-3">{result}</span>
           </div>
         </div>
       </div>
