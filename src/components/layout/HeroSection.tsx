@@ -1,55 +1,53 @@
-import React from "react";
-import { Ripple } from "../magicui/ripple";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-import Typewriter from "typewriter-effect";
-import { Button } from "../ui/button";
 import { ChevronRight } from "lucide-react";
+import Typewriter from "typewriter-effect";
+import { Ripple } from "../magicui/ripple";
+import { Button } from "../ui/button";
 
 const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative grid h-screen w-full place-items-center overflow-hidden"
+      className="relative min-h-screen w-full flex items-center px-6 md:px-16 overflow-hidden"
     >
-      {/* Main Content */}
-      <div className="relative z-10 flex w-full max-w-7xl items-center justify-between px-35">
-        <div className="flex flex-col items-start gap-4">
-          <DotLottieReact
-            className="w-20"
-            src="/src/assets/hand wave.lottie"
-            loop
-            autoplay
-          />
+      <div className="flex flex-col items-start gap-4">
+        <DotLottieReact
+          className="w-20"
+          src="/src/assets/hand wave.lottie"
+          loop
+          autoplay
+        />
 
-          <h1 className="text-3xl font-bold">I'm Regis Mugisha</h1>
+        <h1 className="text-3xl font-bold">I'm Regis Mugisha</h1>
 
-          <div className="flex gap-1 text-lg">
-            <p>I am into</p>
-            <div className="text-blue-500 font-semibold">
-              <Typewriter
-                options={{
-                  strings: ["Web Development", "Mobile App Development"],
-                  autoStart: true,
-                  loop: true,
-                  delay: 100,
-                }}
-              />
-            </div>
+        <div className="flex gap-1 text-lg">
+          <p>I am into</p>
+          <div className="text-blue-500 font-semibold">
+            <Typewriter
+              options={{
+                strings: ["Web Development", "Mobile App Development"],
+                autoStart: true,
+                loop: true,
+                delay: 100,
+              }}
+            />
           </div>
+        </div>
 
-          <p className="text-md text-gray-600 dark:text-gray-400 max-w-lg">
-            I am a passionate Full Stack and Mobile App Developer creating fast,
-            modern, and user-friendly digital experiences.
-          </p>
+        <p className="text-md text-gray-600 dark:text-gray-400 max-w-lg">
+          I am a passionate Full Stack and Mobile App Developer creating fast,
+          modern, and user-friendly digital experiences.
+        </p>
 
-          <Button size="lg">
+        <Button asChild size="lg">
+          <a href="#about">
             About Me
             <ChevronRight className="ml-2 h-4 w-4" />
-          </Button>
-        </div>
+          </a>
+        </Button>
       </div>
 
-      <div className="absolute right-0 top-0 h-full w-1/2 z-0">
+      <div className="h-full absolute inset-0 lg:right-0 w-full lg:w-1/2">
         <Ripple />
       </div>
     </section>

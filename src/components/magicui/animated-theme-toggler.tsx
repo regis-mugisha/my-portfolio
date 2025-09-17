@@ -1,9 +1,9 @@
 "use client";
 
-import { Moon, SunDim } from "lucide-react";
-import { useState, useRef } from "react";
-import { flushSync } from "react-dom";
 import { cn } from "@/lib/utils";
+import { Moon, SunDim } from "lucide-react";
+import { useRef, useState } from "react";
+import { flushSync } from "react-dom";
 
 type props = {
   className?: string;
@@ -42,12 +42,12 @@ export const AnimatedThemeToggler = ({ className }: props) => {
         duration: 700,
         easing: "ease-in-out",
         pseudoElement: "::view-transition-new(root)",
-      },
+      }
     );
   };
   return (
     <button ref={buttonRef} onClick={changeTheme} className={cn(className)}>
-      {isDarkMode ? <SunDim /> : <Moon />}
+      {isDarkMode ? <SunDim /> : <Moon size={20} />}
     </button>
   );
 };

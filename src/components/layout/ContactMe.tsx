@@ -45,7 +45,7 @@ const ContactMe = () => {
       id="contact"
       className="min-h-screen py-16 flex flex-col items-center"
     >
-      <h2 className="font-semibold text-4xl mb-12">ContactMe</h2>
+      <h2 className="font-semibold text-4xl mb-12">Contact Me</h2>
       <div className="flex justify-between items-center">
         <Globe />
         <div>
