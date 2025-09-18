@@ -11,7 +11,7 @@ interface RippleProps extends ComponentPropsWithoutRef<"div"> {
 export const Ripple = React.memo(function Ripple({
   mainCircleSize = 210,
   mainCircleOpacity = 0.24,
-  numCircles = 8,
+  numCircles = 7,
   className,
   ...props
 }: RippleProps) {
@@ -19,7 +19,7 @@ export const Ripple = React.memo(function Ripple({
     <div
       className={cn(
         "pointer-events-none absolute inset-0 select-none [mask-image:linear-gradient(to_bottom,white,transparent)]",
-        className,
+        className
       )}
       {...props}
     >
