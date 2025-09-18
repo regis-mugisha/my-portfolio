@@ -5,6 +5,7 @@
 
 @theme {
   --text-md: 14px;
+  --breakpoint-xs: 375px;
 }
 
 @theme inline {
