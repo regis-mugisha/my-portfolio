@@ -9,7 +9,7 @@ import TechStack from "./components/layout/TechStack";
 
 function App() {
   return (
-    <div className="flex flex-col text-md">
+    <div className="flex flex-col text-base">
       <Header />
       <HeroSection />
       <AboutMe />
