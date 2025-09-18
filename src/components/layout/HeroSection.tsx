@@ -8,9 +8,14 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen w-full flex items-center px-6 md:px-16 overflow-hidden"
+      className="relative min-h-screen w-full flex items-center justify-center lg:justify-start px-6 md:px-16 overflow-hidden"
     >
-      <div className="flex flex-col items-start gap-4">
+      {/* Ripple background */}
+      <div className="h-full absolute inset-0 lg:left-1/4 w-full overflow-hidden">
+        <Ripple className="w-full h-full" />
+      </div>
+
+      <div className="flex flex-col items-center lg:items-start gap-4">
         <DotLottieReact
           className="w-20"
           src="/src/assets/hand wave.lottie"
@@ -18,9 +23,11 @@ const HeroSection = () => {
           autoplay
         />
 
-        <h1 className="text-3xl font-bold">I'm Regis Mugisha</h1>
+        <h1 className="text-3xl text-center lg:text-start font-bold">
+          I'm Regis Mugisha
+        </h1>
 
-        <div className="flex gap-1 text-lg">
+        <div className="flex justify-center lg:justify-start items-center gap-1 text-lg">
           <p>I am into</p>
           <div className="text-blue-500 font-semibold">
             <Typewriter
@@ -34,7 +41,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <p className="text-md text-gray-600 dark:text-gray-400 max-w-lg">
+        <p className="text-center leading-relaxed lg:text-start text-gray-600 dark:text-gray-400 max-w-lg">
           I am a passionate Full Stack and Mobile App Developer creating fast,
           modern, and user-friendly digital experiences.
         </p>
@@ -45,10 +52,6 @@ const HeroSection = () => {
             <ChevronRight className="ml-2 h-4 w-4" />
           </a>
         </Button>
-      </div>
-
-      <div className="h-full absolute inset-0 lg:right-0 w-full lg:w-1/2">
-        <Ripple />
       </div>
     </section>
   );

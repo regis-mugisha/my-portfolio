@@ -15,28 +15,30 @@ const Header = () => {
       />
 
       {/* Navigation bar */}
-        <nav className="hidden md:flex items-center gap-7 border py-3 px-4 rounded-full shadow-md">
-          {links.map((link) => (
-            <a
-              href={`#${link.toLowerCase()}`}
-              key={link}
-              className="hover:text-blue-500 transition delay-50 duration-300 ease-in-out"
-            >
-              {link}
-            </a>
-          ))}
-        </nav>
+      <nav className="hidden md:flex items-center gap-7 border py-3 px-4 rounded-full shadow-md">
+        {links.map((link) => (
+          <a
+            href={`#${link.toLowerCase()}`}
+            key={link}
+            className="hover:text-blue-500 transition delay-50 duration-300 ease-in-out"
+          >
+            {link}
+          </a>
+        ))}
+      </nav>
 
       <div className="flex items-center gap-4">
         <AnimatedThemeToggler />
-        <Button variant="ghost" onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden">
+        <Button
+          variant="ghost"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="md:hidden"
+        >
           {isMenuOpen ? <X /> : <Menu />}
         </Button>
       </div>
       {isMenuOpen && (
-        <nav
-          className="absolute top-full inset-x-0 w-full mt-6 md:hidden bg-background shadow-lg rounded-lg border"
-        >
+        <nav className="absolute top-full inset-x-0 w-full mt-7 md:hidden bg-background shadow-lg rounded-lg border">
           <div className="flex flex-col items-center justify-center gap-4 p-4">
             {links.map((link) => (
               <a

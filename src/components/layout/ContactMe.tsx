@@ -47,7 +47,7 @@ const ContactMe = () => {
     >
       <h2 className="font-semibold text-4xl mb-12">Contact Me</h2>
       <div className="flex justify-between items-center">
-        <Globe />
+        <Globe className="hidden md:block" />
         <div>
           <h3 className="text-2xl">Get in touch</h3>
           <p className="text-gray-400 mb-3">
@@ -55,7 +55,7 @@ const ContactMe = () => {
             say hello, I will try my best to get back to you!
           </p>
 
-          <div className="w-full max-w-[400px]">
+          <div className="w-full md:flex-1 max-w-lg">
             <form onSubmit={handleSubmit} className="flex flex-col gap-3">
               <Input
                 value={fullName}
