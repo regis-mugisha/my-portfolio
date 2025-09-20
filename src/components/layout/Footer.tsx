@@ -40,10 +40,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="flex items-center justify-center h-[5rem] w-full">
-        <FloatingDock
-          mobileClassName="translate-y-20" // only for demo, remove for production
-          items={links}
-        />
+        <FloatingDock mobileClassName="translate-y-50" items={links} />
       </div>
     </footer>
   );

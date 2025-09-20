@@ -3,21 +3,20 @@ import { allProjects, projectCategories } from "@/constants/projects";
 import ProjectCard from "../common/ProjectCard";
 const Projects = () => {
   return (
-    <section
-      id="projects"
-      className="min-h-screen w-full flex flex-col items-center pt-20 mb-6"
-    >
+    <section id="projects" className="w-full flex flex-col items-center mb-6">
       <h2 className="font-semibold text-4xl mb-12">Projects</h2>
       <Tabs defaultValue="all" className="items-center w-full">
-        <TabsList>
-          {projectCategories.map((category) => (
-            <TabsTrigger key={category} value={`${category.toLowerCase()}`}>
-              {category}
-            </TabsTrigger>
-          ))}
-        </TabsList>
+        <div className="w-full md:w-fit overflow-x-auto px-4 [&::-webkit-scrollbar]:hidden">
+          <TabsList>
+            {projectCategories.map((category) => (
+              <TabsTrigger key={category} value={`${category.toLowerCase()}`}>
+                {category}
+              </TabsTrigger>
+            ))}
+          </TabsList>
+        </div>
         <TabsContent value="all">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr max-w-7xl py-8 px-35">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr max-w-7xl py-8 px-6 md:px-16">
             {allProjects.map((project, index) => (
               <ProjectCard
                 key={index}
@@ -31,7 +30,7 @@ const Projects = () => {
           </div>
         </TabsContent>
         <TabsContent value="full stack">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr max-w-7xl py-8 px-35">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr max-w-7xl py-8 px-6 md:px-16">
             {allProjects
               .filter((project) => project.type == "full stack")
               .map((project) => (
@@ -46,7 +45,7 @@ const Projects = () => {
           </div>
         </TabsContent>
         <TabsContent value="backend">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr max-w-7xl py-8 px-35">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr max-w-7xl py-8 px-6 md:px-16">
             {allProjects
               .filter((project) => project.type == "backend")
               .map((project) => (
@@ -61,7 +60,7 @@ const Projects = () => {
           </div>
         </TabsContent>
         <TabsContent value="mobile">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr max-w-7xl py-8 px-35">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr max-w-7xl py-8 px-6 md:px-16">
             {allProjects
               .filter((project) => project.type == "mobile")
               .map((project) => (
@@ -76,7 +75,7 @@ const Projects = () => {
           </div>
         </TabsContent>
         <TabsContent value="embedded systems">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr max-w-7xl py-8 px-35">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr max-w-7xl py-8 px-6 md:px-16">
             {allProjects
               .filter((project) => project.type == "embedded systems")
               .map((project) => (

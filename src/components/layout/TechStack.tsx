@@ -12,7 +12,7 @@ const TechStack = () => {
   return (
     <section
       id="tech-stack"
-      className="h-screen flex flex-col items-center justify-center"
+      className="min-h-[90vh] flex flex-col items-center justify-center px-4"
     >
       <h2 className="font-semibold text-4xl mb-12">Tech Stack</h2>
 
