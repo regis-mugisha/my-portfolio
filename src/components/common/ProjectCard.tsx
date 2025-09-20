@@ -41,7 +41,9 @@ const ProjectCard = ({
               <img
                 src={image}
                 className="w-full h-47 rounded-2xl object-cover"
-                alt="Project Image"
+                alt={`${name} project screenshot`}
+                loading="lazy"
+                decoding="async"
               />
             ) : (
               <ImagePlaceholder />

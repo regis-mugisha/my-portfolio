@@ -6,28 +6,32 @@ const AboutMe = () => {
   return (
     <section
       id="about"
-      className="py-4 px-6 md:px-16 h-screen flex flex-col justify-center"
+      className="py-6 px-6 md:px-16 flex flex-col justify-center"
     >
       <h2 className="text-center font-semibold text-4xl mb-12">About Me</h2>
 
-      <div className="flex flex-col justify-center lg:flex-row items-center lg:justify-between gap-4">
+      <div className="flex flex-col gap-7 justify-center lg:flex-row lg:gap-0 items-center lg:justify-between ">
         {/* Card */}
 
-        <Card className="w-70 p-3 transform lg:-rotate-3 transition duration-300 hover:-translate-y-3">
-          <CardContent>
-            <img
-              src="/src/assets/images/profile-pic.jpg"
-              className="w-full h-80 object-cover rounded-2xl grayscale hover:grayscale-0 transition-filter duration-300 ease-in-out"
-              alt="image"
-            />
-          </CardContent>
-          <CardFooter className="justify-center">
-            <span className="text-md font-medium">Regis Mugisha</span>
-          </CardFooter>
-        </Card>
+        <div className="flex flex-1 justify-center lg:basis-1/2">
+          <Card className="w-56 md:w-80 p-3 transform lg:-rotate-3 transition duration-300 hover:-translate-y-3">
+            <CardContent>
+              <img
+                src="/src/assets/images/profile-pic.jpg"
+                className="w-full h-56 md:h-80 object-cover rounded-2xl grayscale hover:grayscale-0 transition-filter duration-300 ease-in-out"
+                alt="Regis Mugisha - Software Developer"
+                loading="lazy"
+                decoding="async"
+              />
+            </CardContent>
+            <CardFooter className="justify-center">
+              <span className="text-md font-medium">Regis Mugisha</span>
+            </CardFooter>
+          </Card>
+        </div>
 
         {/* Description */}
-        <div className="flex mx-4 flex-1 flex-col gap-3">
+        <div className="flex mx-4 flex-col gap-3 lg:basis-1/2">
           <p className="text-3xl font-semibold">Regis Mugisha</p>
           <Badge className="text-blue-500 bg-blue-100 dark:bg-blue-500/20">
             Software Developer
