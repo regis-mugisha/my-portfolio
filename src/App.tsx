@@ -9,13 +9,15 @@ import TechStack from "./components/layout/TechStack";
 
 function App() {
   return (
-    <div className="flex flex-col text-base overflow-hidden">
+    <div className="flex flex-col text-base">
       <Header />
       <HeroSection />
       <AboutMe />
       <TechStack />
-      <Projects />
-      <Education />
+      <div className="overflow-x-hidden">
+        <Projects />
+        <Education />
+      </div>
       <ContactMe />
       <Footer />
     </div>
