@@ -1,7 +1,7 @@
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
-import { Button } from "../ui/button";
 import GlobeLazy from "../lazy/GlobeLazy";
+import { Button } from "../ui/button";
 import { Textarea } from "../ui/textarea";
 
 const ContactMe = () => {
@@ -52,7 +52,7 @@ const ContactMe = () => {
     <section id="contact" className="flex flex-col justify-center items-center">
       <h2 className="font-semibold text-4xl mb-6">Contact Me</h2>
       <div className="flex justify-between items-center">
-        <GlobeLazy className="hidden md:block" />
+        <GlobeLazy />
         <div className="flex flex-col items-center px-6 md:px-16">
           <h3 className="text-2xl md:self-start">Get in touch</h3>
           <p className="text-gray-500 mb-3 text-center md:text-start">
@@ -86,11 +86,13 @@ const ContactMe = () => {
               </Button>
             </form>
             {result && (
-              <div className={`mt-3 p-3 rounded-md ${
-                result.includes("✅") 
-                  ? "bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-400" 
-                  : "bg-red-100 text-red-800 dark:bg-red-900/20 dark:text-red-400"
-              }`}>
+              <div
+                className={`mt-3 p-3 rounded-md ${
+                  result.includes("✅")
+                    ? "bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-400"
+                    : "bg-red-100 text-red-800 dark:bg-red-900/20 dark:text-red-400"
+                }`}
+              >
                 {result}
               </div>
             )}
