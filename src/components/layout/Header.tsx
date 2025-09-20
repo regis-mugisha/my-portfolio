@@ -1,6 +1,7 @@
 import { links } from "@/constants/links";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { smoothScrollTo } from "@/utils/smoothScroll";
 import { AnimatedThemeToggler } from "../magicui/animated-theme-toggler";
 import { Button } from "../ui/button";
 
@@ -17,13 +18,13 @@ const Header = () => {
       {/* Navigation bar */}
       <nav className="hidden md:flex items-center gap-7 border py-3 px-4 rounded-full shadow-md">
         {links.map((link) => (
-          <a
-            href={`#${link.toLowerCase()}`}
+          <button
+            onClick={() => smoothScrollTo(link.toLowerCase(), 80)}
             key={link}
             className="hover:text-blue-500 transition delay-50 duration-300 ease-in-out"
           >
             {link}
-          </a>
+          </button>
         ))}
       </nav>
 
@@ -41,14 +42,16 @@ const Header = () => {
         <nav className="absolute top-full inset-x-0 w-full mt-7 md:hidden bg-background shadow-lg rounded-lg border">
           <div className="flex flex-col items-center justify-center gap-4 p-4">
             {links.map((link) => (
-              <a
-                href={`#${link.toLowerCase()}`}
+              <button
+                onClick={() => {
+                  smoothScrollTo(link.toLowerCase(), 80);
+                  setIsMenuOpen(false);
+                }}
                 key={link}
-                onClick={() => setIsMenuOpen(false)}
                 className="hover:text-primary transition-colors text-lg"
               >
                 {link}
-              </a>
+              </button>
             ))}
           </div>
         </nav>

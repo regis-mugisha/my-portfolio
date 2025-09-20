@@ -1,3 +1,4 @@
+import { smoothScrollTo } from "@/utils/smoothScroll";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { ChevronRight } from "lucide-react";
 import Typewriter from "typewriter-effect";
@@ -8,10 +9,10 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen w-full flex items-center justify-center lg:justify-start px-6 md:px-16 overflow-hidden"
+      className="relative min-h-screen w-full flex items-center justify-center lg:justify-start px-6 md:px-16 overflow-x-hidden"
     >
       {/* Ripple background */}
-      <div className="h-full absolute inset-0 lg:left-1/4 w-full overflow-hidden">
+      <div className="h-full absolute inset-0 lg:left-1/4 w-full">
         <Ripple className="w-full h-full" />
       </div>
 
@@ -21,6 +22,10 @@ const HeroSection = () => {
           src="/src/assets/hand wave.lottie"
           loop
           autoplay
+          speed={0.5}
+          rendererSettings={{
+            preserveAspectRatio: "xMidYMid slice"
+          }}
         />
 
         <h1 className="text-3xl text-center lg:text-start font-bold">
@@ -46,11 +51,9 @@ const HeroSection = () => {
           modern, and user-friendly digital experiences.
         </p>
 
-        <Button asChild size="lg">
-          <a href="#about">
-            About Me
-            <ChevronRight className="ml-2 h-4 w-4" />
-          </a>
+        <Button onClick={() => smoothScrollTo("about", 80)} size="lg">
+          About Me
+          <ChevronRight className="ml-2 h-4 w-4" />
         </Button>
       </div>
     </section>
