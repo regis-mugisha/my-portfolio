@@ -1,10 +1,11 @@
+import RevealOnScroll from "../common/RevealOnScroll";
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
 import { Card, CardContent, CardFooter } from "../ui/card";
 
 const AboutMe = () => {
   return (
-    <section
+    <RevealOnScroll
       id="about"
       className="py-6 px-6 md:px-16 flex flex-col justify-center"
     >
@@ -47,7 +48,7 @@ const AboutMe = () => {
           <Button className="self-start">Resume</Button>
         </div>
       </div>
-    </section>
+    </RevealOnScroll>
   );
 };
 
