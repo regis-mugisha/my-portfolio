@@ -18,7 +18,7 @@ const AboutMe = () => {
           <Card className="w-56 md:w-80 p-3 transform lg:-rotate-3 transition duration-300 hover:-translate-y-3">
             <CardContent>
               <img
-                src="/src/assets/images/profile-pic.jpg"
+                src="/assets/images/profile-pic.jpg"
                 className="w-full h-56 md:h-80 object-cover rounded-2xl grayscale hover:grayscale-0 transition-filter duration-300 ease-in-out"
                 alt="Regis Mugisha - Software Developer"
                 loading="lazy"

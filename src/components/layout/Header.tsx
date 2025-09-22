@@ -1,7 +1,7 @@
 import { links } from "@/constants/links";
+import { smoothScrollTo } from "@/utils/smoothScroll";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { smoothScrollTo } from "@/utils/smoothScroll";
 import { AnimatedThemeToggler } from "../magicui/animated-theme-toggler";
 import { Button } from "../ui/button";
 
@@ -11,7 +11,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full backdrop-blur-sm flex items-center justify-between py-4 px-6 md:px-16">
       <img
         className="w-8 h-8 rounded-full object-cover"
-        src="/src/assets/images/profile-pic.jpg"
+        src="/assets/images/profile-pic.jpg"
         alt="profile-pic"
       />
 

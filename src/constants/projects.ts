@@ -10,7 +10,7 @@ export const projectCategories = [
 
 export const allProjects: Project[] = [
   {
-    image: "/src//assets/images/chat-app.png",
+    image: "/assets/images/chat-app.png",
     name: "Realtime Chat App",
     technologyStack: "React, Node.js, Express.js, Socket.io",
     githubLink: "https://github.com/regis-mugisha/chat-app",
@@ -18,7 +18,7 @@ export const allProjects: Project[] = [
     type: "full stack",
   },
   {
-    image: "/src/assets/images/expense-tracker.png",
+    image: "/assets/images/expense-tracker.png",
     name: "Expense Tracker",
     technologyStack: "React Native, Expo, Node.js, Express.js, Upstash",
     githubLink: "https://github.com/regis-mugisha/expo-wallet-mobile",
