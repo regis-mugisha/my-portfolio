@@ -53,12 +53,12 @@ const ContactMe = () => {
   return (
     <RevealOnScroll
       id="contact"
-      className="flex flex-col justify-center items-center"
+      className="flex py-3 flex-col justify-center items-center"
     >
       <h2 className="font-semibold text-4xl mb-6">Contact Me</h2>
       <div className="flex justify-between items-center">
         <GlobeLazy />
-        <div className="flex flex-col items-center px-6 md:px-16">
+        <div className="flex flex-col items-center gap-3 px-6 md:px-16">
           <h3 className="text-2xl md:self-start">Get in touch</h3>
           <p className="text-gray-500 mb-3 text-center md:text-start">
             My inbox is always open. Whether you have a question or just want to

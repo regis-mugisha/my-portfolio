@@ -7,7 +7,7 @@ const AboutMe = () => {
   return (
     <RevealOnScroll
       id="about"
-      className="py-6 px-6 md:px-16 flex flex-col justify-center"
+      className="min-h-[90vh] py-12 px-6 md:px-16 flex flex-col justify-center"
     >
       <h2 className="text-center font-semibold text-4xl mb-12">About Me</h2>
 
