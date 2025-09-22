@@ -4,7 +4,10 @@ import { Timeline, TimelineItem } from "../ui/timeline";
 
 const Education = () => {
   return (
-    <RevealOnScroll className="mt-12 px-6 md:px-16">
+    <RevealOnScroll
+      id="education"
+      className="min-h-[90vh] flex flex-col justify-center mt-12 px-6 md:px-16"
+    >
       <h2 className="font-semibold text-4xl mb-12 text-center">Education</h2>
       <Timeline>
         <TimelineItem
