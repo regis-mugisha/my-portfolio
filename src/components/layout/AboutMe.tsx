@@ -45,7 +45,14 @@ const AboutMe = () => {
             creating scalable solutions that solve real problems and deliver
             great user experiences.
           </p>
-          <Button className="self-start">Resume</Button>
+          <Button className="self-start" asChild>
+            <a
+              href="https://drive.google.com/file/d/1ruQKddQFFbvetpn5LD0EmMi6iKmQ10R9/view?usp=sharing"
+              target="_blank"
+            >
+              Resume
+            </a>
+          </Button>
         </div>
       </div>
     </RevealOnScroll>
