@@ -38,9 +38,9 @@ const AboutMe = () => {
             Software Developer
           </Badge>
           <p className="leading-relaxed">
-            I am a Full Stack Developer and Mobile App Developer with a passion
-            for building modern, fast, and user-friendly digital products. I
-            enjoy turning ideas into real applications, from crafting clean and
+            I am a Full Stack and Mobile App Developer with a passion for
+            building modern, fast, and user-friendly digital products. I enjoy
+            turning ideas into real applications, from crafting clean and
             responsive UIs to developing powerful backends. My focus is on
             creating scalable solutions that solve real problems and deliver
             great user experiences.
