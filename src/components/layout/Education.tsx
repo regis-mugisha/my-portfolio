@@ -1,9 +1,10 @@
 import { GraduationCap } from "lucide-react";
+import RevealOnScroll from "../common/RevealOnScroll";
 import { Timeline, TimelineItem } from "../ui/timeline";
 
 const Education = () => {
   return (
-    <section className="mt-12 px-6 md:px-16">
+    <RevealOnScroll className="mt-12 px-6 md:px-16">
       <h2 className="font-semibold text-4xl mb-12 text-center">Education</h2>
       <Timeline>
         <TimelineItem
@@ -21,7 +22,7 @@ const Education = () => {
           status="completed"
         />
       </Timeline>
-    </section>
+    </RevealOnScroll>
   );
 };
 

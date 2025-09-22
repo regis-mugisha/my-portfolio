@@ -1,5 +1,6 @@
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
+import RevealOnScroll from "../common/RevealOnScroll";
 import GlobeLazy from "../lazy/GlobeLazy";
 import { Button } from "../ui/button";
 import { Textarea } from "../ui/textarea";
@@ -50,7 +51,10 @@ const ContactMe = () => {
     }
   };
   return (
-    <section id="contact" className="flex flex-col justify-center items-center">
+    <RevealOnScroll
+      id="contact"
+      className="flex flex-col justify-center items-center"
+    >
       <h2 className="font-semibold text-4xl mb-6">Contact Me</h2>
       <div className="flex justify-between items-center">
         <GlobeLazy />
@@ -100,7 +104,7 @@ const ContactMe = () => {
           </div>
         </div>
       </div>
-    </section>
+    </RevealOnScroll>
   );
 };
 

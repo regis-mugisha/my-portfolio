@@ -1,12 +1,16 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { allProjects, projectCategories } from "@/constants/projects";
 import ProjectCard from "../common/ProjectCard";
+import RevealOnScroll from "../common/RevealOnScroll";
 const Projects = () => {
   return (
-    <section id="projects" className="w-full flex flex-col items-center mb-6">
+    <RevealOnScroll
+      id="projects"
+      className="w-full py-3 flex flex-col items-center mb-6"
+    >
       <h2 className="font-semibold text-4xl mb-12">Projects</h2>
       <Tabs defaultValue="all" className="items-center w-full">
-        <div className="w-full md:w-fit overflow-x-auto px-4 [&::-webkit-scrollbar]:hidden">
+        <div className="w-full sm:w-fit overflow-x-auto px-4 [&::-webkit-scrollbar]:hidden">
           <TabsList>
             {projectCategories.map((category) => (
               <TabsTrigger key={category} value={`${category.toLowerCase()}`}>
@@ -90,7 +94,7 @@ const Projects = () => {
           </div>
         </TabsContent>
       </Tabs>
-    </section>
+    </RevealOnScroll>
   );
 };
 

@@ -7,10 +7,11 @@ import {
   othersTech,
   technologyCategories,
 } from "@/constants/technologies";
+import RevealOnScroll from "../common/RevealOnScroll";
 
 const TechStack = () => {
   return (
-    <section
+    <RevealOnScroll
       id="tech-stack"
       className="min-h-[90vh] flex flex-col items-center justify-center px-4"
     >
@@ -81,7 +82,7 @@ const TechStack = () => {
           </div>
         </TabsContent>
       </Tabs>
-    </section>
+    </RevealOnScroll>
   );
 };
 

@@ -2,12 +2,13 @@ import { smoothScrollTo } from "@/utils/smoothScroll";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { ChevronRight } from "lucide-react";
 import Typewriter from "typewriter-effect";
+import RevealOnScroll from "../common/RevealOnScroll";
 import { Ripple } from "../magicui/ripple";
 import { Button } from "../ui/button";
 
 const HeroSection = () => {
   return (
-    <section
+    <RevealOnScroll
       id="home"
       className="relative min-h-screen w-full flex items-center justify-center lg:justify-start px-6 md:px-16 overflow-x-hidden"
     >
@@ -53,7 +54,7 @@ const HeroSection = () => {
           <ChevronRight className="ml-2 h-4 w-4" />
         </Button>
       </div>
-    </section>
+    </RevealOnScroll>
   );
 };
 
