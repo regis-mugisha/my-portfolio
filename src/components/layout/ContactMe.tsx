@@ -44,6 +44,7 @@ const ContactMe = () => {
       }
     } catch (error) {
       setResult("❌ Error: Failed to send message. Please try again.");
+      console.log(error);
     } finally {
       setIsLoading(false);
     }

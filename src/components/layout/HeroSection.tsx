@@ -23,9 +23,6 @@ const HeroSection = () => {
           loop
           autoplay
           speed={0.5}
-          rendererSettings={{
-            preserveAspectRatio: "xMidYMid slice"
-          }}
         />
 
         <h1 className="text-3xl text-center lg:text-start font-bold">
