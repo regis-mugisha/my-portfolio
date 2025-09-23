@@ -13,11 +13,11 @@ const HeroSection = () => {
       className="relative min-h-screen w-full flex items-center justify-center lg:justify-start px-6 md:px-16 overflow-x-hidden"
     >
       {/* Ripple background */}
-      <div className="h-full absolute inset-0 lg:left-1/4 w-full">
+      <div className="h-full absolute inset-0 lg:left-1/4 w-full z-0">
         <Ripple className="w-full h-full" />
       </div>
 
-      <div className="flex flex-col items-center lg:items-start gap-4">
+      <div className="flex flex-col items-center lg:items-start gap-4 z-10">
         <DotLottieReact
           className="w-20"
           src="/src/assets/hand wave.lottie"
@@ -35,7 +35,7 @@ const HeroSection = () => {
           <div className="text-blue-500 font-semibold">
             <Typewriter
               options={{
-                strings: ["Web Development", "Mobile App Development"],
+                strings: ["Web Development", "Mobile Development"],
                 autoStart: true,
                 loop: true,
                 delay: 100,
@@ -49,7 +49,7 @@ const HeroSection = () => {
           modern, and user-friendly digital experiences.
         </p>
 
-        <Button onClick={() => smoothScrollTo("about", 80)} size="lg">
+        <Button size="lg" onClick={() => smoothScrollTo("about", 80)}>
           About Me
           <ChevronRight className="ml-2 h-4 w-4" />
         </Button>
