@@ -47,7 +47,7 @@ const AboutMe = () => {
           </p>
           <Button className="self-start" asChild>
             <a
-              href="https://drive.google.com/file/d/1ruQKddQFFbvetpn5LD0EmMi6iKmQ10R9/view?usp=sharing"
+              href="https://docs.google.com/document/d/12vvBHC3tdCb7ePIi5itOm3qksDhJPHkHMhLrkIxJWH4/edit?usp=sharing"
               target="_blank"
             >
               Resume
