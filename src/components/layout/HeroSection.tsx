@@ -20,7 +20,7 @@ const HeroSection = () => {
       <div className="flex flex-col items-center lg:items-start gap-4 z-10">
         <DotLottieReact
           className="w-20"
-          src="/src/assets/hand wave.lottie"
+          src="/hand-wave.lottie"
           loop
           autoplay
           speed={0.5}

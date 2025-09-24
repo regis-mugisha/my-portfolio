@@ -1,5 +1,8 @@
-import { Suspense } from "react";
-import { Globe } from "../ui/globe";
+import { Suspense, lazy } from "react";
+
+const Globe = lazy(() =>
+  import("../ui/globe").then((mod) => ({ default: mod.Globe }))
+);
 
 const GlobeLazy = () => {
   return (

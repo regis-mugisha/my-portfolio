@@ -53,12 +53,16 @@ const ContactMe = () => {
   return (
     <RevealOnScroll
       id="contact"
-      className="flex py-3 flex-col justify-center items-center"
+      className="flex py-3 flex-col justify-center items-center px-6 md:px-16 gap-4"
     >
       <h2 className="font-semibold text-4xl mb-6">Contact Me</h2>
-      <div className="flex justify-between items-center">
-        <GlobeLazy />
-        <div className="flex flex-col items-center gap-3 px-6 md:px-16">
+      <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="w-full flex justify-center md:justify-start">
+          <div className="w-full max-w-[420px] md:max-w-[460px]">
+            <GlobeLazy />
+          </div>
+        </div>
+        <div className="flex flex-col items-center md:items-start gap-3 min-w-0">
           <h3 className="text-2xl md:self-start">Get in touch</h3>
           <p className="text-gray-500 mb-3 text-center md:text-start">
             My inbox is always open. Whether you have a question or just want to
@@ -84,6 +88,7 @@ const ContactMe = () => {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Message*"
+                className="break-words"
                 required
               />
               <Button type="submit" disabled={isLoading}>

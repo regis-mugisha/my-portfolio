@@ -21,7 +21,7 @@ const Header = () => {
           <button
             onClick={() => smoothScrollTo(link.toLowerCase(), 80)}
             key={link}
-            className="hover:text-blue-500 transition delay-50 duration-300 ease-in-out"
+            className="hover:text-blue-500 transition delay-50 duration-150 ease-in-out"
           >
             {link}
           </button>

@@ -1,4 +1,4 @@
-import { animate } from "framer-motion";
+import { animate } from "motion";
 
 export const smoothScrollTo = (elementId: string, offset: number = 0) => {
   const element = document.getElementById(elementId);

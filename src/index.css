@@ -148,6 +148,12 @@
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .animate-ripple {
+    animation: none;
+  }
+}
+
 ::view-transition-old(root),
 ::view-transition-new(root) {
   animation: none;
