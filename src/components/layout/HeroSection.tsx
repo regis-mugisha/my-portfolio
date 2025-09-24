@@ -10,10 +10,10 @@ const HeroSection = () => {
   return (
     <RevealOnScroll
       id="home"
-      className="relative min-h-screen w-full flex items-center justify-center lg:justify-start px-6 md:px-16 overflow-x-hidden"
+      className="relative min-h-screen w-full flex items-center justify-center lg:justify-start px-6 md:px-16 overflow-hidden"
     >
       {/* Ripple background */}
-      <div className="h-full absolute inset-0 lg:left-1/4 w-full z-0">
+      <div className="h-full absolute inset-0 lg:left-1/4 w-full z-0 overflow-hidden">
         <Ripple className="w-full h-full" />
       </div>
 
