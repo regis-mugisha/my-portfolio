@@ -19,7 +19,7 @@ const AboutMe = () => {
             <CardContent>
               <img
                 src="/assets/images/profile-pic.jpg"
-                className="w-full h-56 md:h-80 object-cover rounded-2xl grayscale hover:grayscale-0 transition-filter duration-300 ease-in-out"
+                className="w-full h-56 md:h-80 object-cover rounded-2xl grayscale hover:grayscale-0 transition-filter duration-50 ease-in-out"
                 alt="Regis Mugisha - Software Developer"
                 loading="lazy"
                 decoding="async"
