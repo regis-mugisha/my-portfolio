@@ -25,7 +25,7 @@ const ProjectCard = ({
         <CardContent className="flex flex-col gap-3">
           <div className="relative overflow-hidden rounded-2xl group">
             {/* Overlay */}
-            <div className="absolute inset-0 z-10 bg-black/50 w-0 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 group-hover:w-full flex justify-center items-center gap-3">
+            <div className="absolute inset-0 z-10 bg-black/50 transform origin-left scale-x-0 transition-all duration-200 ease-out opacity-0 group-hover:opacity-100 group-hover:scale-x-100 flex justify-center items-center gap-3">
               {liveDemoLink && (
                 <IconButton hrefLink={liveDemoLink}>
                   <SquareArrowOutUpRight />
