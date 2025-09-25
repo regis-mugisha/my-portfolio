@@ -9,11 +9,13 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   return (
     <header className="sticky top-0 z-50 w-full backdrop-blur-sm flex items-center justify-between py-4 px-6 md:px-16">
-      <img
-        className="w-8 h-8 rounded-full object-cover"
-        src="/assets/images/profile-pic.jpg"
-        alt="profile-pic"
-      />
+      <button onClick={() => smoothScrollTo("home", 80)}>
+        <img
+          className="w-8 h-8 rounded-full object-cover"
+          src="/assets/images/profile-pic.jpg"
+          alt="profile-pic"
+        />
+      </button>
 
       {/* Navigation bar */}
       <nav className="hidden md:flex items-center gap-7 border py-3 px-4 rounded-full shadow-md">
@@ -21,7 +23,7 @@ const Header = () => {
           <button
             onClick={() => smoothScrollTo(link.toLowerCase(), 80)}
             key={link}
-            className="hover:text-blue-500 transition delay-50 duration-150 ease-in-out"
+            className="hover:text-blue-500 transition duration-70 ease-in-out"
           >
             {link}
           </button>
