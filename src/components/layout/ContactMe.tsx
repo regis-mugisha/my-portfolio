@@ -53,11 +53,11 @@ const ContactMe = () => {
   return (
     <RevealOnScroll
       id="contact"
-      className="flex py-3 flex-col justify-center items-center px-6 md:px-16 gap-4"
+      className="flex flex-col justify-center items-center px-6 md:px-16"
     >
-      <h2 className="font-semibold text-4xl mb-6">Contact Me</h2>
+      <h2 className="font-semibold text-4xl mb-12 ">Contact Me</h2>
       <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div className="w-full flex justify-center md:justify-start">
+        <div className="w-full flex justify-center">
           <div className="w-full max-w-[420px] md:max-w-[460px]">
             <GlobeLazy />
           </div>
