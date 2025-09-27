@@ -1,7 +1,6 @@
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import RevealOnScroll from "../common/RevealOnScroll";
-import GlobeLazy from "../lazy/GlobeLazy";
 import { Button } from "../ui/button";
 import { Textarea } from "../ui/textarea";
 
@@ -58,9 +57,7 @@ const ContactMe = () => {
       <h2 className="font-semibold text-4xl mb-12 ">Contact Me</h2>
       <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div className="w-full flex justify-center">
-          <div className="w-full max-w-[420px] md:max-w-[460px]">
-            <GlobeLazy />
-          </div>
+          <img src="/assets/images/3d-illustrator.png" alt="image" />
         </div>
         <div className="flex flex-col items-center md:items-start gap-3 min-w-0">
           <h3 className="text-2xl md:self-start">Get in touch</h3>
@@ -91,7 +88,7 @@ const ContactMe = () => {
                 className="break-words"
                 required
               />
-              <Button type="submit" disabled={isLoading}>
+              <Button className="self-end" type="submit" disabled={isLoading}>
                 {isLoading ? "Sending..." : "Say Hello👏"}
               </Button>
             </form>
