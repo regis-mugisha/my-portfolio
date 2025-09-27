@@ -8,7 +8,7 @@ import { Button } from "../ui/button";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   return (
-    <header className="sticky top-0 z-50 w-full backdrop-blur-sm flex items-center justify-between py-4 px-6 md:px-16">
+    <header className="sticky top-0 z-50 w-full backdrop-blur-sm flex items-center justify-between py-4 px-6 md:px-16 text-sm">
       <button onClick={() => smoothScrollTo("home", 80)}>
         <img
           className="w-8 h-8 rounded-full object-cover"
