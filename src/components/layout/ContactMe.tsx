@@ -44,7 +44,6 @@ const ContactMe = () => {
       }
     } catch (error) {
       setResult("❌ Error: Failed to send message. Please try again.");
-      console.log(error);
     } finally {
       setIsLoading(false);
     }
@@ -57,7 +56,13 @@ const ContactMe = () => {
       <h2 className="font-semibold text-4xl mb-12 ">Contact Me</h2>
       <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div className="w-full flex justify-center">
-          <img src="/assets/images/3d-illustrator.png" alt="image" />
+          <img 
+            src="/assets/images/3d-illustrator.png" 
+            alt="Contact illustration" 
+            width={400}
+            height={400}
+            loading="lazy"
+          />
         </div>
         <div className="flex flex-col items-center md:items-start gap-3 min-w-0">
           <h3 className="text-2xl md:self-start">Get in touch</h3>

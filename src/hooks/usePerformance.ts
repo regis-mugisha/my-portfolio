@@ -18,7 +18,7 @@ export const usePerformance = () => {
         if (entry.entryType === 'navigation') {
           const navEntry = entry as PerformanceNavigationTiming;
           if (navEntry.loadEventEnd - navEntry.loadEventStart > 3000) {
-            console.warn('Slow page load detected');
+            // Slow page load detected - could implement performance optimization here
           }
         }
       }
