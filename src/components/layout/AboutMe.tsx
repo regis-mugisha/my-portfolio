@@ -21,6 +21,8 @@ const AboutMe = () => {
                 src="/assets/images/profile-pic.jpg"
                 className="w-full h-56 md:h-80 object-cover rounded-2xl grayscale hover:grayscale-0 transition-filter duration-50 ease-in-out"
                 alt="Regis Mugisha - Software Developer"
+                width={320}
+                height={320}
                 loading="lazy"
                 decoding="async"
               />

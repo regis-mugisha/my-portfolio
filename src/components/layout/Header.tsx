@@ -13,7 +13,9 @@ const Header = () => {
         <img
           className="w-8 h-8 rounded-full object-cover"
           src="/assets/images/profile-pic.jpg"
-          alt="profile-pic"
+          alt="Regis Mugisha profile picture"
+          width={32}
+          height={32}
         />
       </button>
 

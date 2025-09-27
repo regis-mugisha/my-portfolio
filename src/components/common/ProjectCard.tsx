@@ -45,6 +45,8 @@ const ProjectCard = ({
                 src={image}
                 className="w-full h-47 rounded-2xl object-cover"
                 alt={`${name} project screenshot`}
+                width={400}
+                height={300}
                 loading="lazy"
                 decoding="async"
               />
