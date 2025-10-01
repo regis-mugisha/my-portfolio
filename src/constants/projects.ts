@@ -11,7 +11,7 @@ export const projectCategories = [
 export const allProjects: Project[] = [
   {
     image: "/assets/images/chat-app.png",
-    name: "Realtime Chat App",
+    name: "Chatter",
     technologyStack: "React, Node.js, Express.js, Socket.io",
     githubLink: "https://github.com/regis-mugisha/chat-app",
     liveDemoLink: "https://chat-app-yimr.onrender.com/",
@@ -19,7 +19,7 @@ export const allProjects: Project[] = [
   },
   {
     image: "/assets/images/expense-tracker.png",
-    name: "Expense Tracker",
+    name: "FinTrack",
     technologyStack: "React Native, Expo, Node.js, Express.js, Upstash",
     githubLink: "https://github.com/regis-mugisha/expo-wallet-mobile",
     type: "mobile",
