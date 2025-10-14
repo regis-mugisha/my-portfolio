@@ -43,6 +43,8 @@ const ContactMe = () => {
         setResult("❌ Error: " + (data.message || "Failed to send message"));
       }
     } catch (error) {
+      // Log the error for debugging without breaking user flow
+      console.error(error);
       setResult("❌ Error: Failed to send message. Please try again.");
     } finally {
       setIsLoading(false);
@@ -56,12 +58,11 @@ const ContactMe = () => {
       <h2 className="font-semibold text-4xl mb-12 ">Contact Me</h2>
       <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div className="w-full flex justify-center">
-          <img 
-            src="/assets/images/3d-illustrator.png" 
-            alt="Contact illustration" 
+          <img
+            src="/assets/images/3d-illustrator.png"
+            alt="Contact illustration"
             width={400}
             height={400}
-            loading="lazy"
           />
         </div>
         <div className="flex flex-col items-center md:items-start gap-3 min-w-0">

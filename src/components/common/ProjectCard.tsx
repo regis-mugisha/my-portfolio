@@ -47,7 +47,6 @@ const ProjectCard = ({
                 alt={`${name} project screenshot`}
                 width={400}
                 height={300}
-                loading="lazy"
                 decoding="async"
               />
             ) : (

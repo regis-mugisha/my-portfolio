@@ -23,7 +23,6 @@ const AboutMe = () => {
                 alt="Regis Mugisha - Software Developer"
                 width={320}
                 height={320}
-                loading="lazy"
                 decoding="async"
               />
             </CardContent>
