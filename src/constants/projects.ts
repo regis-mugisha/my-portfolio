@@ -10,6 +10,14 @@ export const projectCategories = [
 
 export const allProjects: Project[] = [
   {
+    image: "/assets/images/subbuddy.png",
+    name: "SubBuddy",
+    technologyStack: "Next.js Typescript Shadcn-UI Clerk-Auth Neon Drizzle",
+    githubLink: "https://github.com/regis-mugisha/subscription-sidekick",
+    liveDemoLink: "https://subscription-sidekick.vercel.app/",
+    type: "full stack",
+  },
+  {
     image: "/assets/images/chat-app.png",
     name: "Chatter",
     technologyStack: "React, Node.js, Express.js, Socket.io",
