@@ -12,7 +12,8 @@ export const allProjects: Project[] = [
   {
     image: "/assets/images/subbuddy.png",
     name: "SubBuddy",
-    technologyStack: "Next.js Typescript Shadcn-UI Clerk-Auth Neon Drizzle",
+    technologyStack:
+      "Next.js, Typescript, Shadcn-UI, Clerk-Auth, Neon, Drizzle",
     githubLink: "https://github.com/regis-mugisha/subscription-sidekick",
     liveDemoLink: "https://subscription-sidekick.vercel.app/",
     type: "full stack",
