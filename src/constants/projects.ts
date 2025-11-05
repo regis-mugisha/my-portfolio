@@ -10,6 +10,14 @@ export const projectCategories = [
 
 export const allProjects: Project[] = [
   {
+    image: "/assets/images/savings-ms-client.png",
+    name: "Savings Management System",
+    technologyStack:
+      "React Native, Expo, EAS, Node.js, Express.js, MongoDB, Redis",
+    githubLink: "https://github.com/regis-mugisha/savings-ms-client",
+    type: "mobile",
+  },
+  {
     image: "/assets/images/subbuddy.png",
     name: "SubBuddy",
     technologyStack:
