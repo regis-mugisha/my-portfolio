@@ -144,7 +144,9 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
   }
 }
 
