@@ -1,8 +1,8 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { IconBrandGithub } from "@tabler/icons-react";
 import { SquareArrowOutUpRight } from "lucide-react";
-import IconButton from "./IconButton";
-import ImagePlaceholder from "./ImagePlaceholder";
+import IconButton from "./icon-button";
+import ImagePlaceholder from "./image-placeholder";
 
 type ProjectCardProps = {
   image?: string;

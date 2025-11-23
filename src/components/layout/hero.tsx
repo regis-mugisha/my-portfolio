@@ -2,7 +2,7 @@ import { smoothScrollTo } from "@/utils/smoothScroll";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { ChevronRight } from "lucide-react";
 import Typewriter from "typewriter-effect";
-import RevealOnScroll from "../common/RevealOnScroll";
+import RevealOnScroll from "../common/reveal-on-scroll";
 import { Ripple } from "../magicui/ripple";
 import { Button } from "../ui/button";
 

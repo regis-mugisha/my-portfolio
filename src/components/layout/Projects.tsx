@@ -1,8 +1,8 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { allProjects, projectCategories } from "@/constants/projects";
 import { useMemo, useState } from "react";
-import ProjectCard from "../common/ProjectCard";
-import RevealOnScroll from "../common/RevealOnScroll";
+import ProjectCard from "../common/project-card";
+import RevealOnScroll from "../common/reveal-on-scroll";
 const Projects = () => {
   const [value, setValue] = useState("all");
   const filtered = useMemo(() => {

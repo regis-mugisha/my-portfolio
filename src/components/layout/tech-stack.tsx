@@ -1,4 +1,4 @@
-import { TechIcon } from "@/components/common/TechIcon";
+import { TechIcon } from "@/components/common/tech-icon";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   backendTech,
@@ -7,7 +7,7 @@ import {
   othersTech,
   technologyCategories,
 } from "@/constants/technologies";
-import RevealOnScroll from "../common/RevealOnScroll";
+import RevealOnScroll from "../common/reveal-on-scroll";
 
 const TechStack = () => {
   return (

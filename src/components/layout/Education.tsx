@@ -1,5 +1,5 @@
 import { GraduationCap } from "lucide-react";
-import RevealOnScroll from "../common/RevealOnScroll";
+import RevealOnScroll from "../common/reveal-on-scroll";
 import { Timeline, TimelineItem } from "../ui/timeline";
 
 const Education = () => {

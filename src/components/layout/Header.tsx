@@ -1,5 +1,5 @@
 import { links } from "@/constants/links";
-import useScrollSpy from "@/hooks/useScrollSpy";
+import useScrollSpy from "@/hooks/use-scrollspy";
 import { smoothScrollTo } from "@/utils/smoothScroll";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";

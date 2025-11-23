@@ -1,6 +1,6 @@
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
-import RevealOnScroll from "../common/RevealOnScroll";
+import RevealOnScroll from "../common/reveal-on-scroll";
 import { Button } from "../ui/button";
 import { Textarea } from "../ui/textarea";
 

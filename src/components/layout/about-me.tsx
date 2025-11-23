@@ -1,4 +1,4 @@
-import RevealOnScroll from "../common/RevealOnScroll";
+import RevealOnScroll from "../common/reveal-on-scroll";
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
 import { Card, CardContent, CardFooter } from "../ui/card";

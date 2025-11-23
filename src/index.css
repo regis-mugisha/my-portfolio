@@ -146,7 +146,7 @@
     @apply bg-background text-foreground;
     font-family: "Geist", sans-serif;
     font-optical-sizing: auto;
-    font-style: normal;
+    /* font-style: normal; */
   }
 }
 
