@@ -9,6 +9,7 @@ export type Technology = {
 export type Project = {
   image?: string;
   name: string;
+  description: string;
   technologyStack: string;
   githubLink: string;
   liveDemoLink?: string;
