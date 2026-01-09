@@ -1,8 +1,8 @@
 export const links = [
   "Home",
   "About",
-  "Tech-Stack",
+  "Services",
   "Projects",
-  "Education",
+  "Experience",
   "Contact",
 ];
