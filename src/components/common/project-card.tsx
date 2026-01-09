@@ -3,10 +3,12 @@ import { IconBrandGithub } from "@tabler/icons-react";
 import { SquareArrowOutUpRight } from "lucide-react";
 import IconButton from "./icon-button";
 import ImagePlaceholder from "./image-placeholder";
+import { Badge } from "../ui/badge";
 
 type ProjectCardProps = {
   image?: string;
   name: string;
+  description: string;
   technologyStack: string;
   githubLink: string;
   liveDemoLink?: string;
@@ -15,6 +17,7 @@ type ProjectCardProps = {
 const ProjectCard = ({
   image,
   name,
+  description,
   technologyStack,
   githubLink,
   liveDemoLink,
@@ -43,6 +46,7 @@ const ProjectCard = ({
             {image ? (
               <img
                 src={image}
+                loading="lazy"
                 className="w-full h-47 rounded-2xl object-cover"
                 alt={`${name} project screenshot`}
                 width={400}
@@ -53,12 +57,17 @@ const ProjectCard = ({
               <ImagePlaceholder />
             )}
           </div>
-          <p className="text-xl font-medium">{name}</p>
-        </CardContent>
-        <CardFooter className="px-0">
-          <p className="">
-            <span className="font-medium">Tech Stack:</span> {technologyStack}
+          <p className="text-lg font-medium">{name}</p>
+          <p className="text-sm text-muted-foreground text-justify">
+            {description}
           </p>
+        </CardContent>
+        <CardFooter className="px-0 flex flex-wrap gap-2">
+          {technologyStack.split(",").map((tech) => (
+            <Badge variant="secondary" key={tech}>
+              {tech}
+            </Badge>
+          ))}
         </CardFooter>
       </Card>
     </div>
