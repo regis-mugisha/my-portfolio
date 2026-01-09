@@ -8,7 +8,7 @@ const variants = {
 
 type RevealOnScrollProps = PropsWithChildren<{
   id?: string;
-  className: string;
+  className?: string;
 }>;
 
 const RevealOnScroll = ({ children, id, className }: RevealOnScrollProps) => {
